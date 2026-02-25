@@ -44,6 +44,6 @@ When I'm not working or studying, you can find me tinkering with my **Homelab**,
 
 ### 📡 Let's Connect
 
-I'm always looking to connect with like-minded people who champion independent software. Whether you want to collaborate, swap ideas about OCPM and Rust, or just chat about the future of tech—reach out!
+I'm always looking to connect with like-minded people who champion independent software. Whether you want to collaborate, swap ideas about OCPM, or just chat about the future of tech!
 
 **Email:** frederic.lange@arcen-research.com
