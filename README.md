@@ -22,14 +22,11 @@ Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** a
 
 ---
 
-### 🐍 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DEIN_GITHUB_NAME/DEIN_GITHUB_NAME/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DEIN_GITHUB_NAME/DEIN_GITHUB_NAME/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/DEIN_GITHUB_NAME/DEIN_GITHUB_NAME/output/github-contribution-grid-snake.svg">
-  </picture>
+  <img src="ocpm-animation.svg" alt="OCPM Data Flow Animation" />
 </div>
+
+---
 
 ### 🏗️ Working with: 
 
