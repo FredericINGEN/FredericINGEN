@@ -1,27 +1,68 @@
-<svg width="850" height="150" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="#0d1117" rx="15"/>
+<svg width="850" height="350" viewBox="0 0 850 350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#0a0c10" />
 
-  <path d="M 150 75 L 425 75 L 700 75" stroke="#4479A1" stroke-width="3" fill="none" opacity="0.5"/>
-  <path d="M 250 75 Q 425 20 600 75" stroke="#4479A1" stroke-width="2" fill="none" stroke-dasharray="5 5" opacity="0.3"/>
-  
-  <circle r="6" fill="#00E5FF">
-    <animate attributeName="cx" values="150; 700; 150" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
-    <animate attributeName="cy" values="75; 75; 75" dur="4s" repeatCount="indefinite"/>
-  </circle>
+  <defs>
+    <rect id="node" x="-4" y="-4" width="8" height="8" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" />
+  </defs>
 
-  <circle cx="150" cy="75" r="15" fill="#FF6F00">
-    <animate attributeName="r" values="15; 20; 15" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1; 0.7; 1" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <text x="150" y="115" fill="#ffffff" font-family="monospace" font-size="12" text-anchor="middle">Data Source</text>
+  <g stroke="rgba(255,255,255,0.15)" stroke-width="0.8">
+    <animateTransform attributeName="transform" type="translate" values="-15,10; 15,-10; -15,10" dur="20s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" />
+    
+    <line x1="50" y1="50" x2="250" y2="150" />
+    <line x1="250" y1="150" x2="400" y2="80" />
+    <line x1="400" y1="80" x2="600" y2="200" />
+    <line x1="600" y1="200" x2="800" y2="100" />
+    <line x1="250" y1="150" x2="350" y2="300" />
+    <line x1="600" y1="200" x2="700" y2="320" />
+    <line x1="50" y1="50" x2="-50" y2="-20" />
+    <line x1="800" y1="100" x2="950" y2="50" />
+    
+    <use href="#node" x="50" y="50" />
+    <use href="#node" x="250" y="150" />
+    <use href="#node" x="400" y="80" />
+    <use href="#node" x="600" y="200" />
+    <use href="#node" x="800" y="100" />
+    <use href="#node" x="350" y="300" />
+    <use href="#node" x="700" y="320" />
+  </g>
 
-  <rect x="405" y="55" width="40" height="40" fill="#00E5FF" rx="8">
-    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="3s" repeatCount="indefinite"/>
-  </rect>
-  <text x="425" y="115" fill="#ffffff" font-family="monospace" font-size="12" text-anchor="middle">Logic Cell</text>
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+    <animateTransform attributeName="transform" type="translate" values="10,-15; -10,15; 10,-15" dur="15s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" />
+    
+    <line x1="150" y1="250" x2="300" y2="120" />
+    <line x1="300" y1="120" x2="500" y2="220" />
+    <line x1="500" y1="220" x2="750" y2="150" />
+    <line x1="300" y1="120" x2="450" y2="40" />
+    <line x1="500" y1="220" x2="550" y2="330" />
+    <line x1="150" y1="250" x2="250" y2="340" />
+    <line x1="450" y1="40" x2="750" y2="150" />
+    
+    <use href="#node" x="150" y="250" />
+    <use href="#node" x="300" y="120" />
+    <use href="#node" x="500" y="220" />
+    <use href="#node" x="750" y="150" />
+    <use href="#node" x="450" y="40" />
+    <use href="#node" x="550" y="330" />
+    <use href="#node" x="250" y="340" />
+  </g>
 
-  <circle cx="700" cy="75" r="15" fill="#4479A1">
-    <animate attributeName="r" values="15; 18; 15" dur="2.5s" repeatCount="indefinite"/>
-  </circle>
-  <text x="700" y="115" fill="#ffffff" font-family="monospace" font-size="12" text-anchor="middle">TypeDB</text>
+  <g stroke="rgba(255,255,255,0.5)" stroke-width="1.2">
+    <animateTransform attributeName="transform" type="translate" values="-5,-5; 5,5; -5,-5" dur="10s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" />
+    
+    <line x1="200" y1="100" x2="380" y2="180" />
+    <line x1="380" y1="180" x2="550" y2="100" />
+    <line x1="550" y1="100" x2="680" y2="250" />
+    <line x1="380" y1="180" x2="420" y2="300" />
+    <line x1="200" y1="100" x2="100" y2="200" />
+    <line x1="100" y1="200" x2="-20" y2="280" />
+    <line x1="680" y1="250" x2="880" y2="300" />
+    <line x1="550" y1="100" x2="650" y2="-20" />
+    
+    <use href="#node" x="200" y="100" stroke="rgba(255,255,255,0.9)" />
+    <use href="#node" x="380" y="180" stroke="rgba(255,255,255,0.9)" />
+    <use href="#node" x="550" y="100" stroke="rgba(255,255,255,0.9)" />
+    <use href="#node" x="680" y="250" stroke="rgba(255,255,255,0.9)" />
+    <use href="#node" x="420" y="300" stroke="rgba(255,255,255,0.9)" />
+    <use href="#node" x="100" y="200" stroke="rgba(255,255,255,0.9)" />
+  </g>
 </svg>
