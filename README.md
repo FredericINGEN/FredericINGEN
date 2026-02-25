@@ -8,7 +8,7 @@
 
 ### 🖖 Hi, I'm Frederic.
 
-I’m a builder and open-source advocate on a mission to bring true digital sovereignty to the industrial and medical sectors. For me, sovereignty isn't just a buzzword or a box to check, it's a core conviction. I want to build tools that give power back to the users/Industries, rather than trapping them in walled gardens and SaaS dependencies.
+I’m a developer and open-source advocate dedicated to bringing true digital sovereignty to the industrial and medical sectors. I build tools that empower users and industries, freeing them from walled gardens and SaaS dependencies.
 
 ### 🛰️ What I'm currently exploring
 
@@ -16,9 +16,14 @@ Right now, I'm operating at the intersection of complex process data and semanti
 
 Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** and ML:
 
-* ⚗️ **Data Alchemy:** Developing ways to extract structured, meaningful data out of messy, real-world industrial machine logs and medical records.
-* 👁️‍🗨️ **Semantic Reasoning:** Moving way beyond flat event logs. I use OCPM and semantic databases to map complex, multi-object relationships in manufacturing (at least i am trying ;)).
-* 🏰 **Autonomy by Design:** Ensuring that the logic we build can run completely independent of centralized cloud infrastructure. 
+* ⚗️ **Data Alchemy:** Extracting structured, meaningful data out of messy, real-world industrial machine logs and medical records.
+* 👁️‍🗨️ **Semantic Reasoning:** Moving beyond flat event logs. I use OCPM and semantic databases to map complex, multi-object relationships in manufacturing.
+* 🏰 **Autonomy by Design:** Ensuring that the systems we build can run completely independent of centralized cloud infrastructure. 
+
+---
+
+### 🐍 
+
 
 ---
 
@@ -34,12 +39,10 @@ Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** a
 
 ### ☕ Beyond the Code
 
-I believe the best connections happen when we talk about more than just syntax. When I'm not writing Rust or querying graphs, you can probably find me:
-* Tinkering with my **Homelab** and exploring self-hosted, local-first architectures.
-* 📖 *(Hier kannst du ein Hobby einfügen, z.B. Reading about decentralized tech, bouldering, brewing way too much coffee, etc.)*
+When I'm not working or studying, you can find me tinkering with my **Homelab**, exploring self-hosted and local-first architectures.
 
 ### 📡 Let's Connect
 
-I am always looking for like-minded people who refuse to just hand over the digital landscape to big tech. If you want to collaborate, swap ideas about OCPM and Rust, or just chat about the future of independent software—reach out!
+I'm always looking to connect with like-minded people who champion independent software. Whether you want to collaborate, swap ideas about OCPM and Rust, or just chat about the future of tech—reach out!
 
-E-Mail: frederic.lange@arcen-research.com 
+**Email:** frederic.lange@arcen-research.com
