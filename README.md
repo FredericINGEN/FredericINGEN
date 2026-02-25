@@ -23,7 +23,46 @@ Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** a
 ---
 
 ### 🐍 
+name: Generate Snake Animation
 
+on:
+  # Führt die Action alle 12 Stunden aus
+  schedule:
+    - cron: "0 */12 * * *"
+  # Erlaubt es dir, die Action jederzeit manuell zu starten
+  workflow_dispatch:
+  # Führt die Action aus, wenn du etwas pusht
+  push:
+    branches:
+    - main
+    - master
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      # Generiert die SVG-Bilder (Hell und Dunkel)
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          # Holt automatisch deinen GitHub-Nutzernamen
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      # Speichert (pusht) die generierten Bilder in den "output"-Branch
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 ---
 
