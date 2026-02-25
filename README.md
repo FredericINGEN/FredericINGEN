@@ -23,7 +23,7 @@ Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** a
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DEIN_NAME/NAME_DES_ERSTEN_REPOS/main/ocpm-engine.svg" width="100%" alt="Sovereign Logic Engine" />
+  <img src="https://raw.githubusercontent.com/FredericINGEN/FredericINGEN/main/animation.svg" width="100%" alt="Sovereign Logic Engine" />
 </div>
 
 ---
