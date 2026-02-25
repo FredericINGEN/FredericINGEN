@@ -56,12 +56,7 @@
   <g font-family="monospace" font-size="10" fill="#00f3ff" letter-spacing="1">
     <text x="20" y="30" font-weight="bold" font-size="14" filter="url(#glow)">// SOVEREIGN LOGIC ENGINE v2.0</text>
     
-    <g transform="translate(680, 30)">
-      <text x="0" y="0" fill="#ff8c00">STATUS: CORE_ACTIVE</text>
-      <rect x="-10" y="10" width="100" height="2" fill="#ff8c00">
-        <animate attributeName="width" values="0;100;90;100" dur="5s" repeatCount="indefinite"/>
-      </rect>
-    </g>
+  
     
     <g transform="translate(20, 270)">
        <text x="0" y="0">> OCPM STREAM INGESTION...</text>
