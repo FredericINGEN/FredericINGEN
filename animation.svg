@@ -218,10 +218,10 @@
     </path>
   </g>
 
-  <rect x="440" y="70" width="200" height="14" fill="#e0e0e0" opacity="0.1" />
-  <text x="445" y="81" fill="#e0e0e0" font-size="10" font-weight="bold">LOGIC.EVAL.STATUS</text>
+  <rect x="520" y="70" width="200" height="14" fill="#e0e0e0" opacity="0.1" />
+  <text x="525" y="81" fill="#e0e0e0" font-size="10" font-weight="bold">LOGIC.EVAL.STATUS</text>
 
-  <g transform="translate(440, 100)" font-size="9" fill="#e0e0e0">
+  <g transform="translate(520, 100)" font-size="9" fill="#e0e0e0">
     <text x="0" y="0" fill="#808080">SUBSYS</text>
     <text x="60" y="0" fill="#808080">VAL</text>
     <text x="130" y="0" fill="#808080">STS</text>
@@ -257,7 +257,7 @@
     <rect x="165" y="83" width="5" height="5" fill="#42c2c2" />
   </g>
 
-  <g transform="translate(440, 215)" font-size="9" fill="#e0e0e0">
+  <g transform="translate(520, 215)" font-size="9" fill="#e0e0e0">
     <rect x="0" y="-12" width="200" height="75" fill="none" stroke="#e0e0e0" stroke-width="1" opacity="0.3" />
     
     <text x="5" y="0" fill="#42c2c2">> STRM INGESTION...</text>
