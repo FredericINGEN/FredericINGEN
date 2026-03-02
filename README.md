@@ -6,19 +6,19 @@
 
 ---
 
-### 🖖 Hi, I'm Frederic.
+###  Hi, I'm Frederic.
 
 I’m a developer and open-source advocate dedicated to bringing true digital sovereignty to the industrial and medical sectors. I build tools that empower users and industries, freeing them from walled gardens and SaaS dependencies.
 
-### 🛰️ What I'm currently exploring
+###  What I'm currently exploring
 
 Right now, I'm operating at the intersection of complex process data and semantic reasoning. I'm building "Logic Cells"—autonomous, offline-capable knowledge systems designed for SMEs. 
 
 Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** and ML:
 
-* ⚗️ **Data Alchemy:** Extracting structured, meaningful data out of messy, real-world industrial machine logs and medical records.
-* 👁️‍🗨️ **Semantic Reasoning:** Moving beyond flat event logs. I use OCPM and semantic databases to map complex, multi-object relationships in manufacturing.
-* 🏰 **Autonomy by Design:** Ensuring that the systems we build can run completely independent of centralized cloud infrastructure. 
+*  **Data Alchemy:** Extracting structured, meaningful data out of messy, real-world industrial machine logs and medical records.
+*  **Semantic Reasoning:** Moving beyond flat event logs. I use OCPM and semantic databases to map complex, multi-object relationships in manufacturing.
+*  **Autonomy by Design:** Ensuring that the systems we build can run completely independent of centralized cloud infrastructure. 
 
 ---
 
@@ -28,7 +28,7 @@ Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** a
 
 ---
 
-### 🏗️ Working with: 
+###  Working with: 
 
 <div align="left">
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
@@ -38,7 +38,7 @@ Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** a
 
 ---
 
-### ☕ Beyond the Code
+###  Beyond the Code
 
 When I'm not working or studying, you can find me tinkering with my **Homelab**, exploring self-hosted and local-first architectures.
 
