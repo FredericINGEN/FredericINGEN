@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=VT323&weight=500&size=42&pause=1000&color=00FF00&center=true&vCenter=true&width=850&lines=>>>+Building+Industrial+Intelligence+<<<;>>>+Object-Centric+Process+Mining+<<<;>>>+Advocating+Open-Source+Independence+<<<&v=6" alt="Typing Animation" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=VT323&weight=500&size=42&pause=1000&color=00FF00&center=true&vCenter=true&width=850&lines=>>>+Building+Industrial+Intelligence+<<<;>>>+Object-Centric+Process+Mining+<<<;>>>+Open-Source+Independence+<<<&v=6" alt="Typing Animation" />
   </a>
 </div>
 
