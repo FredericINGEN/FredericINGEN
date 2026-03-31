@@ -1,107 +1,50 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal Animation Preview</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #ffffff; /* Weißer Hintergrund für bessere Sichtbarkeit */
-            font-family: sans-serif;
-        }
-        /* Container, um die SVG-Größe zu begrenzen */
-        .svg-container {
-            width: 100%;
-            max-width: 850px;
-        }
-    </style>
-</head>
-<body>
+<svg width="850" height="150" viewBox="0 0 850 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Clipping-Masken für den Typewriter-Effekt -->
+    <clipPath id="t1">
+      <rect x="175" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 500; 500; 0" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="t2">
+      <rect x="185" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 0; 480; 480; 0" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="t3">
+      <rect x="225" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 0; 400; 400; 0" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+  </defs>
 
-<div class="svg-container">
-  <svg viewBox="0 0 850 100" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;">
-    <defs>
-      <style>
-        /* Schriftart und Basis-Styling */
-        .font-style {
-          font-family: 'JetBrains Mono', 'Courier New', monospace;
-          font-size: 26px;
-          font-weight: bold;
-          dominant-baseline: middle;
-        }
-        
-        /* Farben - Hier kannst du den Hex-Code anpassen (z.B. #00ff9d für Grün, #C78DFF für Lila) */
-        .prompt { fill: #00ff9d; font-weight: bold; }
-        .faded-text { fill: #00ff9d; opacity: 0.35; } /* Faded/Hologram Look */
-        .cursor { fill: #00ff9d; }
+  <!-- Zeile 1: Building Industrial Intelligence -->
+  <g opacity="0" font-family="monospace" font-weight="bold" font-size="28" fill="#00ff9d">
+    <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 1" dur="12s" repeatCount="indefinite" />
+    <text x="140" y="75" dy=".35em">&gt;</text>
+    <text x="175" y="75" dy=".35em" opacity="0.4" clip-path="url(#t1)">Building Industrial Intelligence</text>
+    <rect y="57" width="16" height="34" fill="#00ff9d">
+      <animate attributeName="x" values="175; 675; 675; 175" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
 
-        /* Haupt-Sequenz: Einblenden -> Halten -> Ausblenden */
-        .group1 { animation: cycle1 12s infinite; opacity: 0; }
-        .group2 { animation: cycle2 12s infinite; opacity: 0; }
-        .group3 { animation: cycle3 12s infinite; opacity: 0; }
+  <!-- Zeile 2: Object-Centric Process Mining -->
+  <g opacity="0" font-family="monospace" font-weight="bold" font-size="28" fill="#00ff9d">
+    <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
+    <text x="150" y="75" dy=".35em">&gt;</text>
+    <text x="185" y="75" dy=".35em" opacity="0.4" clip-path="url(#t2)">Object-Centric Process Mining</text>
+    <rect y="57" width="16" height="34" fill="#00ff9d">
+      <animate attributeName="x" values="185; 185; 665; 665; 185" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
 
-        @keyframes cycle1 { 0%, 30% { opacity: 1; } 31%, 100% { opacity: 0; } }
-        @keyframes cycle2 { 0%, 30% { opacity: 0; } 33%, 63% { opacity: 1; } 64%, 100% { opacity: 0; } }
-        @keyframes cycle3 { 0%, 63% { opacity: 0; } 66%, 96% { opacity: 1; } 97%, 100% { opacity: 0; } }
-
-        /* Clipping-Masken für den sanften Tipp-Effekt von Links nach Rechts */
-        .mask1 { animation: type1 12s infinite linear; }
-        .mask2 { animation: type2 12s infinite linear; }
-        .mask3 { animation: type3 12s infinite linear; }
-
-        /* Breiten exakt berechnet für die Textlängen */
-        @keyframes type1 { 0% { width: 0; } 10%, 30% { width: 510px; } 33%, 100% { width: 0; } }
-        @keyframes type2 { 0%, 33% { width: 0; } 43%, 63% { width: 465px; } 66%, 100% { width: 0; } }
-        @keyframes type3 { 0%, 66% { width: 0; } 76%, 96% { width: 385px; } 100% { width: 0; } }
-
-        /* Cursor-Bewegung synchron zur Maske */
-        .cursor1 { animation: move1 12s infinite linear; }
-        .cursor2 { animation: move2 12s infinite linear; }
-        .cursor3 { animation: move3 12s infinite linear; }
-
-        /* Distanzen exakt berechnet für perfekten Gleichlauf */
-        @keyframes move1 { 0% { transform: translateX(0); } 10%, 30% { transform: translateX(499px); } 33%, 100% { transform: translateX(0); } }
-        @keyframes move2 { 0%, 33% { transform: translateX(0); } 43%, 63% { transform: translateX(452px); } 66%, 100% { transform: translateX(0); } }
-        @keyframes move3 { 0%, 66% { transform: translateX(0); } 76%, 96% { transform: translateX(374px); } 100% { transform: translateX(0); } }
-      </style>
-      
-      <!-- Die Masken, die den Text Stück für Stück enthüllen -->
-      <clipPath id="clip1"><rect x="191" y="0" width="0" height="100" class="mask1"/></clipPath>
-      <clipPath id="clip2"><rect x="215" y="0" width="0" height="100" class="mask2"/></clipPath>
-      <clipPath id="clip3"><rect x="254" y="0" width="0" height="100" class="mask3"/></clipPath>
-    </defs>
-
-    <!-- Zeile 1: Building Industrial Intelligence -->
-    <!-- Start x=160 sorgt dafür, dass dieser lange Text exakt zentriert ist -->
-    <g class="group1 font-style">
-      <text x="160" y="50" class="prompt">&gt;</text>
-      <text x="191" y="50" class="faded-text" clip-path="url(#clip1)">Building Industrial Intelligence</text>
-      <rect x="191" y="34" width="14" height="32" class="cursor cursor1" />
-    </g>
-
-    <!-- Zeile 2: Object-Centric Process Mining -->
-    <!-- Kürzerer Text, daher weiter rechts platziert (x=184) für die Zentrierung -->
-    <g class="group2 font-style">
-      <text x="184" y="50" class="prompt">&gt;</text>
-      <text x="215" y="50" class="faded-text" clip-path="url(#clip2)">Object-Centric Process Mining</text>
-      <rect x="215" y="34" width="14" height="32" class="cursor cursor2" />
-    </g>
-
-    <!-- Zeile 3: Open-Source Independence -->
-    <!-- Kürzester Text, startet bei x=223 -->
-    <g class="group3 font-style">
-      <text x="223" y="50" class="prompt">&gt;</text>
-      <text x="254" y="50" class="faded-text" clip-path="url(#clip3)">Open-Source Independence</text>
-      <rect x="254" y="34" width="14" height="32" class="cursor cursor3" />
-    </g>
-
-  </svg>
-</div>
-
-</body>
-</html>
+  <!-- Zeile 3: Open-Source Independence -->
+  <g opacity="0" font-family="monospace" font-weight="bold" font-size="28" fill="#00ff9d">
+    <animate attributeName="opacity" values="0; 0; 1; 1" keyTimes="0; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
+    <text x="190" y="75" dy=".35em">&gt;</text>
+    <text x="225" y="75" dy=".35em" opacity="0.4" clip-path="url(#t3)">Open-Source Independence</text>
+    <rect y="57" width="16" height="34" fill="#00ff9d">
+      <animate attributeName="x" values="225; 225; 625; 625; 225" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>
