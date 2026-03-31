@@ -1,50 +1,67 @@
 <svg width="850" height="150" viewBox="0 0 850 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Clipping-Masken für den Typewriter-Effekt -->
+    <!-- Clipping-Masken: Berechnet auf Basis der Schriftgröße (36px) und Zentrierung -->
     <clipPath id="t1">
-      <rect x="175" y="0" width="0" height="150">
-        <animate attributeName="width" values="0; 500; 500; 0" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
+      <rect x="90" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 670; 670; 0" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </clipPath>
     <clipPath id="t2">
-      <rect x="185" y="0" width="0" height="150">
-        <animate attributeName="width" values="0; 0; 480; 480; 0" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
+      <rect x="113" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 0; 625; 625; 0" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </clipPath>
     <clipPath id="t3">
-      <rect x="225" y="0" width="0" height="150">
-        <animate attributeName="width" values="0; 0; 400; 400; 0" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
+      <rect x="165" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 0; 520; 520; 0" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
 
-  <!-- Zeile 1: Building Industrial Intelligence -->
-  <g opacity="0" font-family="monospace" font-weight="bold" font-size="28" fill="#00ff9d">
-    <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 1" dur="12s" repeatCount="indefinite" />
-    <text x="140" y="75" dy=".35em">&gt;</text>
-    <text x="175" y="75" dy=".35em" opacity="0.4" clip-path="url(#t1)">Building Industrial Intelligence</text>
-    <rect y="57" width="16" height="34" fill="#00ff9d">
-      <animate attributeName="x" values="175; 675; 675; 175" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
-    </rect>
-  </g>
+  <!-- Gemeinsame Einstellungen: Schriftgröße 36, Zentriert, Farbe: Neon-Grün (#00ff9d) -->
+  <g font-family="monospace" font-weight="bold" font-size="36" fill="#00ff9d" text-anchor="middle">
 
-  <!-- Zeile 2: Object-Centric Process Mining -->
-  <g opacity="0" font-family="monospace" font-weight="bold" font-size="28" fill="#00ff9d">
-    <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
-    <text x="150" y="75" dy=".35em">&gt;</text>
-    <text x="185" y="75" dy=".35em" opacity="0.4" clip-path="url(#t2)">Object-Centric Process Mining</text>
-    <rect y="57" width="16" height="34" fill="#00ff9d">
-      <animate attributeName="x" values="185; 185; 665; 665; 185" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
-    </rect>
-  </g>
+    <!-- Zeile 1: Building Industrial Intelligence -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 1" dur="12s" repeatCount="indefinite" />
+      
+      <!-- Pfeil links vom Textblock -->
+      <text x="65" y="75" dy=".35em">&gt;</text>
+      
+      <!-- Zentrierter Text mit Clip-Maske -->
+      <text x="425" y="75" dy=".35em" opacity="0.4" clip-path="url(#t1)">Building Industrial Intelligence</text>
 
-  <!-- Zeile 3: Open-Source Independence -->
-  <g opacity="0" font-family="monospace" font-weight="bold" font-size="28" fill="#00ff9d">
-    <animate attributeName="opacity" values="0; 0; 1; 1" keyTimes="0; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
-    <text x="190" y="75" dy=".35em">&gt;</text>
-    <text x="225" y="75" dy=".35em" opacity="0.4" clip-path="url(#t3)">Open-Source Independence</text>
-    <rect y="57" width="16" height="34" fill="#00ff9d">
-      <animate attributeName="x" values="225; 225; 625; 625; 225" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
-    </rect>
+      <!-- Cursor: Wandert passend zum Text -->
+      <rect y="53" width="20" height="44" fill="#00ff9d">
+        <animate attributeName="x" values="90; 760; 760; 90" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Zeile 2: Object-Centric Process Mining -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
+      
+      <text x="85" y="75" dy=".35em">&gt;</text>
+      
+      <text x="425" y="75" dy=".35em" opacity="0.4" clip-path="url(#t2)">Object-Centric Process Mining</text>
+
+      <rect y="53" width="20" height="44" fill="#00ff9d">
+        <animate attributeName="x" values="113; 113; 738; 738; 113" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Zeile 3: Open-Source Independence -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0; 0; 1; 1" keyTimes="0; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
+      
+      <text x="135" y="75" dy=".35em">&gt;</text>
+      
+      <text x="425" y="75" dy=".35em" opacity="0.4" clip-path="url(#t3)">Open-Source Independence</text>
+
+      <rect y="53" width="20" height="44" fill="#00ff9d">
+        <animate attributeName="x" values="165; 165; 685; 685; 165" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
   </g>
 </svg>
