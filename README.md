@@ -11,7 +11,7 @@
 I’m a developer/engineer and open-source advocate dedicated to bringing true digital independence to the industrial and medical sectors. I build tools that empower users and industries, freeing them from walled gardens and SaaS dependencies.
 
 ---
-
+![animation](https://raw.githubusercontent.com/FredericINGEN/FredericINGEN/main/animationtwo.svg) 
 ---
 
 ### What I'm Currently Exploring
