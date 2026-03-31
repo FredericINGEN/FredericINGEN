@@ -10,6 +10,10 @@
 
 I’m a developer/engineer and open-source advocate dedicated to bringing true digital independence to the industrial and medical sectors. I build tools that empower users and industries, freeing them from walled gardens and SaaS dependencies.
 
+---
+
+---
+
 ### What I'm Currently Exploring
 
 Right now, I'm operating at the intersection of complex process data and semantic reasoning. I'm building "Logic Cells"—autonomous, offline-capable knowledge systems designed for SMEs.
