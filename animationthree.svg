@@ -1,39 +1,41 @@
 <svg width="850" height="150" viewBox="0 0 850 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Clipping-Masken: Berechnet auf Basis der Schriftgröße (36px) und Zentrierung -->
+    <!-- Clipping-Masken: Exakt berechnet für Schriftgröße 43px (Monospace-Faktor ~0.6) -->
+    <!-- Zeile 1: ca. 826px Gesamtbreite -> Start bei 425 - 413 = 12 -->
     <clipPath id="t1">
-      <rect x="90" y="0" width="0" height="150">
-        <animate attributeName="width" values="0; 670; 670; 0" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
+      <rect x="12" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 826; 826; 0" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </clipPath>
+    <!-- Zeile 2: ca. 748px Gesamtbreite -> Start bei 425 - 374 = 51 -->
     <clipPath id="t2">
-      <rect x="113" y="0" width="0" height="150">
-        <animate attributeName="width" values="0; 0; 625; 625; 0" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
+      <rect x="51" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 0; 748; 748; 0" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </clipPath>
+    <!-- Zeile 3: ca. 620px Gesamtbreite -> Start bei 425 - 310 = 115 -->
     <clipPath id="t3">
-      <rect x="165" y="0" width="0" height="150">
-        <animate attributeName="width" values="0; 0; 520; 520; 0" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
+      <rect x="115" y="0" width="0" height="150">
+        <animate attributeName="width" values="0; 0; 620; 620; 0" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
 
-  <!-- Gemeinsame Einstellungen: Schriftgröße 36, Zentriert, Farbe: Neon-Grün (#00ff9d) -->
-  <g font-family="monospace" font-weight="bold" font-size="36" fill="#00ff9d" text-anchor="middle">
+  <!-- Gemeinsame Einstellungen: Schriftgröße 43, Text-Anchor Middle bei x=425 -->
+  <g font-family="monospace" font-weight="bold" font-size="43" fill="#00ff9d" text-anchor="middle">
 
     <!-- Zeile 1: Building Industrial Intelligence -->
     <g opacity="0">
       <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 1" dur="12s" repeatCount="indefinite" />
       
-      <!-- Pfeil links vom Textblock -->
-      <text x="65" y="75" dy=".35em">&gt;</text>
+      <!-- Pfeil: Dynamisch links vom Textbeginn platziert -->
+      <text x="-15" y="75" dy=".35em" text-anchor="start">&gt;</text>
       
-      <!-- Zentrierter Text mit Clip-Maske -->
       <text x="425" y="75" dy=".35em" opacity="0.4" clip-path="url(#t1)">Building Industrial Intelligence</text>
 
-      <!-- Cursor: Wandert passend zum Text -->
-      <rect y="53" width="20" height="44" fill="#00ff9d">
-        <animate attributeName="x" values="90; 760; 760; 90" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
+      <!-- Cursor: Wandert von x=12 bis x=838 -->
+      <rect y="50" width="22" height="50" fill="#00ff9d">
+        <animate attributeName="x" values="12; 838; 838; 12" keyTimes="0; 0.083; 0.333; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </g>
 
@@ -41,12 +43,12 @@
     <g opacity="0">
       <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.332; 0.333; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
       
-      <text x="85" y="75" dy=".35em">&gt;</text>
+      <text x="25" y="75" dy=".35em" text-anchor="start">&gt;</text>
       
       <text x="425" y="75" dy=".35em" opacity="0.4" clip-path="url(#t2)">Object-Centric Process Mining</text>
 
-      <rect y="53" width="20" height="44" fill="#00ff9d">
-        <animate attributeName="x" values="113; 113; 738; 738; 113" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
+      <rect y="50" width="22" height="50" fill="#00ff9d">
+        <animate attributeName="x" values="51; 51; 799; 799; 51" keyTimes="0; 0.333; 0.416; 0.666; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </g>
 
@@ -54,12 +56,12 @@
     <g opacity="0">
       <animate attributeName="opacity" values="0; 0; 1; 1" keyTimes="0; 0.665; 0.666; 1" dur="12s" repeatCount="indefinite" />
       
-      <text x="135" y="75" dy=".35em">&gt;</text>
+      <text x="85" y="75" dy=".35em" text-anchor="start">&gt;</text>
       
       <text x="425" y="75" dy=".35em" opacity="0.4" clip-path="url(#t3)">Open-Source Independence</text>
 
-      <rect y="53" width="20" height="44" fill="#00ff9d">
-        <animate attributeName="x" values="165; 165; 685; 685; 165" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
+      <rect y="50" width="22" height="50" fill="#00ff9d">
+        <animate attributeName="x" values="115; 115; 735; 735; 115" keyTimes="0; 0.666; 0.749; 0.999; 1" dur="12s" repeatCount="indefinite" />
       </rect>
     </g>
 
