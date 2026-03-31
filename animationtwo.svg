@@ -1,168 +1,169 @@
 <svg viewBox="0 0 860 320" xmlns="http://www.w3.org/2000/svg" width="100%">
 <defs>
-  <style>
-    .mono { font-family: 'JetBrains Mono', 'Courier New', monospace; }
-    @keyframes scan { 0%{transform:translateY(-4px)} 100%{transform:translateY(324px)} }
-    @keyframes p1 { 0%,100%{opacity:1} 50%{opacity:0.4} }
-    @keyframes p2 { 0%,100%{opacity:1} 50%{opacity:0.3} }
-    @keyframes p3 { 0%,100%{opacity:1} 50%{opacity:0.5} }
-    @keyframes p4 { 0%,100%{opacity:1} 50%{opacity:0.4} }
-    @keyframes f1 { 0%,10%{opacity:0} 20%,100%{opacity:1} }
-    @keyframes f2 { 0%,22%{opacity:0} 32%,100%{opacity:1} }
-    @keyframes f3 { 0%,34%{opacity:0} 44%,100%{opacity:1} }
-    @keyframes f4 { 0%,46%{opacity:0} 56%,100%{opacity:1} }
-    @keyframes f5 { 0%,58%{opacity:0} 68%,100%{opacity:1} }
-    @keyframes trainBar { 0%{width:0} 40%{width:90px} 41%{width:0px} 80%{width:90px} 81%{width:0px} 100%{width:65px} }
-    @keyframes epochFade { 0%{opacity:0} 10%{opacity:1} 30%{opacity:0} 31%{opacity:1} 60%{opacity:0} 61%{opacity:1} 100%{opacity:1} }
-    @keyframes noCloud { 0%,100%{opacity:0.6} 50%{opacity:1} }
-    @keyframes cursorBlink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
-  </style>
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Courier New', monospace; font-weight: bold; }
+    @keyframes scan { 0%{transform:translateY(-4px)} 100%{transform:translateY(324px)} }
+    @keyframes p1 { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    @keyframes p2 { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    @keyframes p3 { 0%,100%{opacity:1} 50%{opacity:0.5} }
+    @keyframes p4 { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    @keyframes f1 { 0%,10%{opacity:0} 20%,100%{opacity:1} }
+    @keyframes f2 { 0%,22%{opacity:0} 32%,100%{opacity:1} }
+    @keyframes f3 { 0%,34%{opacity:0} 44%,100%{opacity:1} }
+    @keyframes f4 { 0%,46%{opacity:0} 56%,100%{opacity:1} }
+    @keyframes f5 { 0%,58%{opacity:0} 68%,100%{opacity:1} }
+    @keyframes trainBar { 0%{width:0} 40%{width:90px} 41%{width:0px} 80%{width:90px} 81%{width:0px} 100%{width:65px} }
+    @keyframes epochFade { 0%{opacity:0} 10%{opacity:1} 30%{opacity:0} 31%{opacity:1} 60%{opacity:0} 61%{opacity:1} 100%{opacity:1} }
+    @keyframes noCloud { 0%,100%{opacity:0.6} 50%{opacity:1} }
+    @keyframes cursorBlink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+  </style>
 </defs>
 
 <rect width="860" height="320" fill="#000"/>
-<rect width="860" height="320" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+<rect width="860" height="320" fill="none" stroke="#222222" stroke-width="2.0"/>
 
 <rect x="0" y="0" width="860" height="2" fill="#00ff9d" opacity="0.025">
-  <animateTransform attributeName="transform" type="translate" from="0,-4" to="0,324" dur="6s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" from="0,-4" to="0,324" dur="6s" repeatCount="indefinite"/>
 </rect>
 
 <rect x="0" y="0" width="860" height="28" fill="#050505"/>
-<rect x="0" y="27.5" width="860" height="0.5" fill="#1a1a1a"/>
-<text x="14" y="18" class="mono" font-size="9" fill="#404040" letter-spacing="0.1em">SYSTEM_OS / LOCAL_FIRST / AI_SANDBOX</text>
+<rect x="0" y="27" width="860" height="1.0" fill="#333333"/>
+<text x="14" y="18" class="mono" font-size="9" fill="#00ff9d" letter-spacing="0.1em">SYSTEM_OS / LOCAL_FIRST / AI_SANDBOX</text>
 <text x="660" y="18" class="mono" font-size="9" fill="#2a2a2a" letter-spacing="0.06em">ARCEN_RESEARCH · GERMANY</text>
 
-<rect x="14" y="42" width="222" height="264" fill="#050505" rx="2"/>
-<rect x="14" y="42" width="222" height="264" fill="none" stroke="#1a1a1a" stroke-width="0.5" rx="2"/>
-<text x="24" y="57" class="mono" font-size="8" fill="#505050" letter-spacing="0.12em">LOCAL MODELS · NO CLOUD</text>
-<rect x="162" y="46" width="62" height="12" rx="2" fill="#1a0000"/>
-<rect x="162" y="46" width="62" height="12" rx="2" fill="none" stroke="#ff3333" stroke-width="0.5"/>
-<text x="193" y="55" class="mono" font-size="7" fill="#ff3333" text-anchor="middle" letter-spacing="0.06em" style="animation: noCloud 2s ease-in-out infinite">NO CLOUD</text>
-<rect x="14" y="62" width="222" height="0.5" fill="#1a1a1a"/>
+<g font-size="9" fill="#e0e0e0">
+<rect x="14" y="42" width="222" height="264" fill="#050505" rx="2" stroke="#222222" stroke-width="1.5"/>
+<rect x="14" y="42" width="222" height="264" fill="none" stroke="#333333" stroke-width="2.0" rx="2"/>
+<text x="24" y="57" class="mono" font-size="9" fill="#888888" letter-spacing="0.12em">LOCAL MODELS</text>
+<rect x="162" y="46" width="62" height="12" rx="2" fill="#0a331f" stroke="#00ff9d" stroke-width="2.0"/>
+<text x="193" y="55" class="mono" font-size="9" fill="#00ff9d" text-anchor="middle" letter-spacing="0.06em" style="animation: noCloud 2s ease-in-out infinite">NO CLOUD</text>
+<rect x="14" y="62" width="222" height="1.0" fill="#333333"/>
 
 <rect x="22" y="72" width="6" height="6" rx="1" fill="#00ff9d" style="animation: p1 3s ease-in-out infinite"/>
-<text x="34" y="78" class="mono" font-size="9" fill="#e0e0e0" style="animation: f1 8s ease forwards">LLAMA_3.2_3B</text>
-<text x="168" y="78" class="mono" font-size="8" fill="#505050" style="animation: f1 8s ease forwards">1.9 GB</text>
-<text x="34" y="89" class="mono" font-size="7" fill="#2a2a2a" letter-spacing="0.04em">ON-DEVICE · Q4_K_M · OFFLINE</text>
+<text x="34" y="78" class="mono" font-size="9" fill="#ffffff" style="animation: f1 8s ease forwards">LLAMA_3.2_3B</text>
+<text x="168" y="78" class="mono" font-size="9" fill="#ffffff" style="animation: f1 8s ease forwards">1.9 GB</text>
+<text x="34" y="89" class="mono" font-size="9" fill="#888888" letter-spacing="0.04em">ON-DEVICE · Q4_K_M · OFFLINE</text>
 
 <rect x="22" y="100" width="6" height="6" rx="1" fill="#00aaff" style="animation: p2 2.5s 0.5s ease-in-out infinite"/>
-<text x="34" y="106" class="mono" font-size="9" fill="#e0e0e0" style="animation: f2 8s ease forwards">MISTRAL_7B</text>
-<text x="168" y="106" class="mono" font-size="8" fill="#505050" style="animation: f2 8s ease forwards">4.1 GB</text>
-<text x="34" y="117" class="mono" font-size="7" fill="#2a2a2a" letter-spacing="0.04em">ON-DEVICE · Q4_K_M · OFFLINE</text>
+<text x="34" y="106" class="mono" font-size="9" fill="#ffffff" style="animation: f2 8s ease forwards">MISTRAL_7B</text>
+<text x="168" y="106" class="mono" font-size="9" fill="#ffffff" style="animation: f2 8s ease forwards">4.1 GB</text>
+<text x="34" y="117" class="mono" font-size="9" fill="#888888" letter-spacing="0.04em">ON-DEVICE · Q4_K_M · OFFLINE</text>
 
 <rect x="22" y="128" width="6" height="6" rx="1" fill="#aa77ff" style="animation: p3 2s 1s ease-in-out infinite"/>
-<text x="34" y="134" class="mono" font-size="9" fill="#e0e0e0" style="animation: f3 8s ease forwards">KIMI_K2</text>
-<text x="168" y="134" class="mono" font-size="8" fill="#aa77ff" style="animation: f3 8s ease forwards">API</text>
-<text x="34" y="145" class="mono" font-size="7" fill="#2a2a2a" letter-spacing="0.04em">MOONSHOT · FINE-TUNABLE · MCP</text>
+<text x="34" y="134" class="mono" font-size="9" fill="#ffffff" style="animation: f3 8s ease forwards">KIMI_K2</text>
+<text x="168" y="134" class="mono" font-size="9" fill="#aa77ff" style="animation: f3 8s ease forwards">API</text>
+<text x="34" y="145" class="mono" font-size="9" fill="#888888" letter-spacing="0.04em">MOONSHOT · FINE-TUNABLE · MCP</text>
 
 <rect x="22" y="156" width="6" height="6" rx="1" fill="#ffaa00" style="animation: p4 3.5s 0.3s ease-in-out infinite"/>
-<text x="34" y="162" class="mono" font-size="9" fill="#e0e0e0" style="animation: f4 8s ease forwards">NOMIC_EMBED</text>
-<text x="168" y="162" class="mono" font-size="8" fill="#505050" style="animation: f4 8s ease forwards">80 MB</text>
-<text x="34" y="173" class="mono" font-size="7" fill="#2a2a2a" letter-spacing="0.04em">ON-DEVICE · Q8_0 · VECTOR</text>
+<text x="34" y="162" class="mono" font-size="9" fill="#ffffff" style="animation: f4 8s ease forwards">NOMIC_EMBED</text>
+<text x="168" y="162" class="mono" font-size="9" fill="#ffffff" style="animation: f4 8s ease forwards">80 MB</text>
+<text x="34" y="173" class="mono" font-size="9" fill="#888888" letter-spacing="0.04em">ON-DEVICE · Q8_0 · VECTOR</text>
 
-<rect x="14" y="182" width="222" height="0.5" fill="#1a1a1a"/>
-<text x="24" y="196" class="mono" font-size="8" fill="#303030" letter-spacing="0.06em">BACKEND: OLLAMA · 11434</text>
-<text x="24" y="208" class="mono" font-size="8" fill="#303030" letter-spacing="0.06em">MEMORY : SQLITE_VEC · ONLINE</text>
-<text x="24" y="220" class="mono" font-size="8" fill="#303030" letter-spacing="0.06em">SYNC   : UPSTREAM · 06:00 UTC</text>
-<text x="24" y="232" class="mono" font-size="8" fill="#303030" letter-spacing="0.06em">PWA    : OFFLINE · READY</text>
-<rect x="14" y="242" width="222" height="0.5" fill="#1a1a1a"/>
-<text x="24" y="256" class="mono" font-size="7" fill="#252525" letter-spacing="0.08em">DATA NEVER LEAVES YOUR DEVICE</text>
-<text x="24" y="268" class="mono" font-size="7" fill="#1f1f1f" letter-spacing="0.08em">NO TELEMETRY · NO TRACKING</text>
-<text x="24" y="280" class="mono" font-size="7" fill="#1f1f1f" letter-spacing="0.08em">OPEN SOURCE · MIT LICENSE</text>
+<rect x="14" y="182" width="222" height="1.0" fill="#333333"/>
+<text x="24" y="196" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.06em">BACKEND: OLLAMA · 11434</text>
+<text x="24" y="208" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.06em">MEMORY : SQLITE_VEC · ONLINE</text>
+<text x="24" y="220" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.06em">SYNC   : UPSTREAM · 06:00 UTC</text>
+<text x="24" y="232" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.06em">PWA    : OFFLINE · READY</text>
+<rect x="14" y="242" width="222" height="1.0" fill="#333333"/>
+<text x="24" y="256" class="mono" font-size="9" fill="#888888" letter-spacing="0.08em">DATA NEVER LEAVES YOUR DEVICE</text>
+<text x="24" y="268" class="mono" font-size="9" fill="#888888" letter-spacing="0.08em">NO TELEMETRY · NO TRACKING</text>
+<text x="24" y="280" class="mono" font-size="9" fill="#888888" letter-spacing="0.08em">OPEN SOURCE · MIT LICENSE</text>
+</g>
 
-<rect x="250" y="42" width="310" height="264" fill="#030303" rx="2"/>
-<rect x="250" y="42" width="310" height="264" fill="none" stroke="#1a1a1a" stroke-width="0.5" rx="2"/>
-<text x="260" y="57" class="mono" font-size="8" fill="#505050" letter-spacing="0.12em">FINE-TUNE ON YOUR DATA</text>
-<rect x="250" y="62" width="310" height="0.5" fill="#1a1a1a"/>
+<rect x="250" y="42" width="310" height="264" fill="#030303" rx="2" stroke="#222222" stroke-width="1.5"/>
+<rect x="250" y="42" width="310" height="264" fill="none" stroke="#333333" stroke-width="2.0" rx="2"/>
+<text x="260" y="57" class="mono" font-size="9" fill="#888888" letter-spacing="0.12em">FINE-TUNE ON YOUR DATA</text>
+<rect x="250" y="62" width="310" height="1.0" fill="#333333"/>
 
 <rect x="260" y="70" width="3" height="30" rx="1" fill="#ffaa00" opacity="0.7" style="animation: f1 6s ease forwards"/>
-<text x="269" y="80" class="mono" font-size="8" fill="#ffaa00" letter-spacing="0.08em" style="animation: f1 6s ease forwards">01 · PREPARE</text>
-<text x="269" y="91" class="mono" font-size="8" fill="#505050" style="animation: f1 6s ease forwards">YOUR_DATA.jsonl → OCEL format</text>
+<text x="269" y="80" class="mono" font-size="9" fill="#ffaa00" letter-spacing="0.08em" style="animation: f1 6s ease forwards">01 · PREPARE</text>
+<text x="269" y="91" class="mono" font-size="9" fill="#ffffff" style="animation: f1 6s ease forwards">YOUR_DATA.jsonl → OCEL format</text>
 
-<line x1="263" y1="102" x2="263" y2="114" stroke="#1f1f1f" stroke-width="0.5"/>
-<polygon points="260,114 266,114 263,118" fill="#1f1f1f"/>
+<line x1="263" y1="102" x2="263" y2="114" stroke="#444444" stroke-width="1.0"/>
+<polygon points="260,114 266,114 263,118" fill="#444444"/>
 
 <rect x="260" y="120" width="3" height="30" rx="1" fill="#00aaff" opacity="0.7" style="animation: f2 6s ease forwards"/>
-<text x="269" y="130" class="mono" font-size="8" fill="#00aaff" letter-spacing="0.08em" style="animation: f2 6s ease forwards">02 · TOKENIZE</text>
-<text x="269" y="141" class="mono" font-size="8" fill="#505050" style="animation: f2 6s ease forwards">LlamaFactory · local GPU / CPU</text>
+<text x="269" y="130" class="mono" font-size="9" fill="#00aaff" letter-spacing="0.08em" style="animation: f2 6s ease forwards">02 · TOKENIZE</text>
+<text x="269" y="141" class="mono" font-size="9" fill="#ffffff" style="animation: f2 6s ease forwards">LlamaFactory · local GPU / CPU</text>
 
-<line x1="263" y1="152" x2="263" y2="164" stroke="#1f1f1f" stroke-width="0.5"/>
-<polygon points="260,164 266,164 263,168" fill="#1f1f1f"/>
+<line x1="263" y1="152" x2="263" y2="164" stroke="#444444" stroke-width="1.0"/>
+<polygon points="260,164 266,164 263,168" fill="#444444"/>
 
 <rect x="260" y="170" width="3" height="44" rx="1" fill="#aa77ff" opacity="0.7" style="animation: f3 6s ease forwards"/>
-<text x="269" y="180" class="mono" font-size="8" fill="#aa77ff" letter-spacing="0.08em" style="animation: f3 6s ease forwards">03 · TRAIN</text>
-<text x="269" y="191" class="mono" font-size="8" fill="#505050" style="animation: f3 6s ease forwards">KIMI_K2 · LoRA · your corpus</text>
+<text x="269" y="180" class="mono" font-size="9" fill="#aa77ff" letter-spacing="0.08em" style="animation: f3 6s ease forwards">03 · TRAIN</text>
+<text x="269" y="191" class="mono" font-size="9" fill="#ffffff" style="animation: f3 6s ease forwards">KIMI_K2 · LoRA · your corpus</text>
 <rect x="269" y="197" width="90" height="2" rx="1" fill="#1a1a1a" style="animation: f3 6s ease forwards"/>
 <rect x="269" y="197" width="0" height="2" rx="1" fill="#aa77ff">
-  <animate attributeName="width" values="0;90;0;90;0;65" dur="8s" repeatCount="indefinite"/>
+  <animate attributeName="width" values="0;90;0;90;0;65" dur="8s" repeatCount="indefinite"/>
 </rect>
-<text x="364" y="201" class="mono" font-size="7" fill="#404040" style="animation: epochFade 8s ease-in-out infinite">EPOCH 3/5</text>
-<text x="269" y="210" class="mono" font-size="7" fill="#303030" style="animation: f3 6s ease forwards">KTRANSFORMERS · LOCAL HARDWARE</text>
+<text x="364" y="201" class="mono" font-size="9" fill="#ffffff" style="animation: epochFade 8s ease-in-out infinite">EPOCH 3/5</text>
+<text x="269" y="210" class="mono" font-size="9" fill="#888888" style="animation: f3 6s ease forwards">KTRANSFORMERS · LOCAL HARDWARE</text>
 
-<line x1="263" y1="216" x2="263" y2="228" stroke="#1f1f1f" stroke-width="0.5"/>
-<polygon points="260,228 266,228 263,232" fill="#1f1f1f"/>
+<line x1="263" y1="216" x2="263" y2="228" stroke="#444444" stroke-width="1.0"/>
+<polygon points="260,228 266,228 263,232" fill="#444444"/>
 
 <rect x="260" y="234" width="3" height="30" rx="1" fill="#00ff9d" opacity="0.7" style="animation: f4 6s ease forwards"/>
-<text x="269" y="244" class="mono" font-size="8" fill="#00ff9d" letter-spacing="0.08em" style="animation: f4 6s ease forwards">04 · DEPLOY</text>
-<text x="269" y="255" class="mono" font-size="8" fill="#505050" style="animation: f4 6s ease forwards">GGUF export → Ollama → sandbox</text>
+<text x="269" y="244" class="mono" font-size="9" fill="#00ff9d" letter-spacing="0.08em" style="animation: f4 6s ease forwards">04 · DEPLOY</text>
+<text x="269" y="255" class="mono" font-size="9" fill="#ffffff" style="animation: f4 6s ease forwards">GGUF export → Ollama → sandbox</text>
 
-<rect x="250" y="272" width="310" height="0.5" fill="#1a1a1a"/>
-<text x="260" y="284" class="mono" font-size="7" fill="#2a2a2a" letter-spacing="0.06em">YOUR DATA · YOUR MODEL · YOUR HARDWARE</text>
-<text x="260" y="296" class="mono" font-size="7" fill="#1f1f1f" letter-spacing="0.06em">NO DATA SENT TO EXTERNAL SERVERS</text>
+<rect x="250" y="272" width="310" height="1.0" fill="#333333"/>
+<text x="260" y="284" class="mono" font-size="9" fill="#888888" letter-spacing="0.06em">YOUR DATA · YOUR MODEL · YOUR HARDWARE</text>
+<text x="260" y="296" class="mono" font-size="9" fill="#888888" letter-spacing="0.06em">NO DATA SENT TO EXTERNAL SERVERS</text>
 
-<rect x="574" y="42" width="272" height="264" fill="#050505" rx="2"/>
-<rect x="574" y="42" width="272" height="264" fill="none" stroke="#1a1a1a" stroke-width="0.5" rx="2"/>
-<text x="584" y="57" class="mono" font-size="8" fill="#505050" letter-spacing="0.12em">RUNTIME STATS</text>
-<rect x="574" y="62" width="272" height="0.5" fill="#1a1a1a"/>
+<rect x="574" y="42" width="272" height="264" fill="#050505" rx="2" stroke="#222222" stroke-width="1.5"/>
+<rect x="574" y="42" width="272" height="264" fill="none" stroke="#333333" stroke-width="2.0" rx="2"/>
+<text x="584" y="57" class="mono" font-size="9" fill="#888888" letter-spacing="0.12em">RUNTIME STATS</text>
+<rect x="574" y="62" width="272" height="1.0" fill="#333333"/>
 
-<text x="584" y="78" class="mono" font-size="8" fill="#404040" letter-spacing="0.06em">INFERENCE · TOK/S</text>
-<text x="584" y="92" class="mono" font-size="8" fill="#404040">LLAMA_3B</text>
+<text x="584" y="78" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.06em">INFERENCE · TOK/S</text>
+<text x="584" y="92" class="mono" font-size="9" fill="#888888">LLAMA_3B</text>
 <rect x="648" y="87" width="100" height="3" rx="1" fill="#1a1a1a"/>
 <rect x="648" y="87" width="0" height="3" rx="1" fill="#00ff9d">
-  <animate attributeName="width" from="0" to="80" dur="3s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="80" dur="3s" fill="freeze"/>
 </rect>
-<text x="754" y="91" class="mono" font-size="8" fill="#00ff9d">42</text>
+<text x="754" y="91" class="mono" font-size="9" fill="#ffffff">42</text>
 
-<text x="584" y="104" class="mono" font-size="8" fill="#404040">MISTRAL_7B</text>
+<text x="584" y="104" class="mono" font-size="9" fill="#888888">MISTRAL_7B</text>
 <rect x="648" y="99" width="100" height="3" rx="1" fill="#1a1a1a"/>
 <rect x="648" y="99" width="0" height="3" rx="1" fill="#00aaff">
-  <animate attributeName="width" from="0" to="32" dur="3.5s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="32" dur="3.5s" fill="freeze"/>
 </rect>
-<text x="754" y="103" class="mono" font-size="8" fill="#00aaff">18</text>
+<text x="754" y="103" class="mono" font-size="9" fill="#ffffff">18</text>
 
-<text x="584" y="116" class="mono" font-size="8" fill="#404040">KIMI_K2</text>
+<text x="584" y="116" class="mono" font-size="9" fill="#888888">KIMI_K2</text>
 <rect x="648" y="111" width="100" height="3" rx="1" fill="#1a1a1a"/>
 <rect x="648" y="111" width="0" height="3" rx="1" fill="#aa77ff">
-  <animate attributeName="width" from="0" to="95" dur="2s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="95" dur="2s" fill="freeze"/>
 </rect>
-<text x="754" y="115" class="mono" font-size="8" fill="#aa77ff">API</text>
+<text x="754" y="115" class="mono" font-size="9" fill="#ffffff">API</text>
 
-<rect x="574" y="124" width="272" height="0.5" fill="#1a1a1a"/>
-<text x="584" y="140" class="mono" font-size="8" fill="#505050" letter-spacing="0.12em">ON-DEVICE MEMORY</text>
-<text x="584" y="155" class="mono" font-size="10" fill="#00ff9d">2,847</text>
-<text x="634" y="155" class="mono" font-size="8" fill="#404040"> embeddings stored</text>
-<text x="584" y="169" class="mono" font-size="10" fill="#ffaa00">5</text>
-<text x="596" y="169" class="mono" font-size="8" fill="#404040"> retrieved per query</text>
-<text x="584" y="183" class="mono" font-size="7" fill="#303030" letter-spacing="0.04em">SQLITE_VEC · NOMIC_EMBED · LOCAL</text>
+<rect x="574" y="124" width="272" height="1.0" fill="#333333"/>
+<text x="584" y="140" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.12em">ON-DEVICE MEMORY</text>
+<text x="584" y="155" class="mono" font-size="12" fill="#ffffff">2,847</text>
+<text x="634" y="155" class="mono" font-size="9" fill="#888888"> embeddings stored</text>
+<text x="584" y="169" class="mono" font-size="12" fill="#ffffff">5</text>
+<text x="596" y="169" class="mono" font-size="9" fill="#888888"> retrieved per query</text>
+<text x="584" y="183" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.04em">SQLITE_VEC · NOMIC_EMBED · LOCAL</text>
 
-<rect x="574" y="192" width="272" height="0.5" fill="#1a1a1a"/>
-<text x="584" y="208" class="mono" font-size="8" fill="#505050" letter-spacing="0.12em">FINE-TUNE STATUS</text>
+<rect x="574" y="192" width="272" height="1.0" fill="#333333"/>
+<text x="584" y="208" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.12em">FINE-TUNE STATUS</text>
 <rect x="584" y="215" width="6" height="6" rx="1" fill="#aa77ff">
-  <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
 </rect>
-<text x="594" y="221" class="mono" font-size="8" fill="#404040">KIMI_K2 · LORA · EPOCH 3/5</text>
+<text x="594" y="221" class="mono" font-size="9" fill="#ffffff">KIMI_K2 · LORA · EPOCH 3/5</text>
 <rect x="584" y="228" width="6" height="6" rx="1" fill="#00ff9d"/>
-<text x="594" y="234" class="mono" font-size="8" fill="#404040">LLAMA_3B · LORA · COMPLETE</text>
-<text x="584" y="247" class="mono" font-size="7" fill="#303030" letter-spacing="0.04em">FRAMEWORK: LLAMAFACTORY</text>
-<text x="584" y="259" class="mono" font-size="7" fill="#303030" letter-spacing="0.04em">RUNTIME  : KTRANSFORMERS</text>
+<text x="594" y="234" class="mono" font-size="9" fill="#ffffff">LLAMA_3B · LORA · COMPLETE</text>
+<text x="584" y="247" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.04em">FRAMEWORK: LLAMAFACTORY</text>
+<text x="584" y="259" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.04em">RUNTIME  : KTRANSFORMERS</text>
 
-<rect x="574" y="268" width="272" height="0.5" fill="#1a1a1a"/>
+<rect x="574" y="268" width="272" height="1.0" fill="#333333"/>
 <rect x="584" y="276" width="6" height="6" rx="1" fill="#00ff9d">
-  <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
 </rect>
-<text x="594" y="282" class="mono" font-size="8" fill="#404040">PWA · INSTALLABLE · OFFLINE</text>
-<text x="584" y="295" class="mono" font-size="7" fill="#252525" letter-spacing="0.04em">CHROME + EDGE · DESKTOP + ANDROID</text>
+<text x="594" y="282" class="mono" font-size="9" fill="#ffffff">PWA · INSTALLABLE · OFFLINE</text>
+<text x="584" y="295" class="mono" font-size="9" fill="#ffffff" letter-spacing="0.04em">CHROME + EDGE · DESKTOP + ANDROID</text>
 
-<rect x="0" y="305" width="860" height="0.5" fill="#1a1a1a"/>
+<rect x="0" y="305" width="860" height="1.0" fill="#333333"/>
 <rect x="0" y="305" width="860" height="15" fill="#030303"/>
-<text x="14" y="316" class="mono" font-size="7" fill="#2a2a2a" letter-spacing="0.08em">YOUR DATA · YOUR MODEL · YOUR HARDWARE · LOCAL FIRST · OPEN SOURCE · ARCEN_RESEARCH</text>
+<text x="14" y="316" class="mono" font-size="7" fill="#888888" letter-spacing="0.08em">YOUR DATA · YOUR MODEL · YOUR HARDWARE · LOCAL FIRST · OPEN SOURCE · ARCEN_RESEARCH</text>
 </svg>
