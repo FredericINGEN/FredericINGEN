@@ -1,8 +1,3 @@
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=VT323&weight=500&size=42&pause=1000&color=00FF00&center=true&vCenter=true&width=850&lines=>>>+Building+Industrial+Intelligence+<<<;>>>+Object-Centric+Process+Mining+<<<;>>>+Open-Source+Independence+<<<&v=6" alt="Typing Animation" />
-  </a>
-</div>
 
 ---
 
@@ -36,10 +31,17 @@ Most of my day-to-day revolves around **Object-Centric Process Mining (OCPM)** a
 ### Working With: 
 
 <div align="left">
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Semantic_DB_(TypeDB)-4479A1?style=for-the-badge&logo=database&logoColor=white" alt="TypeDB" />
-  <img src="https://img.shields.io/badge/OCPM-FF6F00?style=for-the-badge&logo=code-igniter&logoColor=white" alt="OCPM" />
+  <img src="https://img.shields.io/badge/Rust-1a1a1a?style=for-the-badge&logo=rust&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C%2B%2B-1a1a1a?style=for-the-badge&logo=c%2B%2B&logoColor=00aaff"/>
+  <img src="https://img.shields.io/badge/TypeDB-1a1a1a?style=for-the-badge&logo=database&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OCPM-1a1a1a?style=for-the-badge&logo=code-igniter&logoColor=ffaa00"/>
+  <img src="https://img.shields.io/badge/Ollama-1a1a1a?style=for-the-badge&logo=ollama&logoColor=00FF9D"/>
+  <img src="https://img.shields.io/badge/LlamaFactory-1a1a1a?style=for-the-badge&logo=pytorch&logoColor=aa77ff"/>
+  <img src="https://img.shields.io/badge/WASM-1a1a1a?style=for-the-badge&logo=webassembly&logoColor=654FF0"/>
+  <img src="https://img.shields.io/badge/Docker-1a1a1a?style=for-the-badge&logo=docker&logoColor=00aaff"/>
+  <img src="https://img.shields.io/badge/React_Native-1a1a1a?style=for-the-badge&logo=react&logoColor=00aaff"/>
+  <img src="https://img.shields.io/badge/Astro-1a1a1a?style=for-the-badge&logo=astro&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tauri-1a1a1a?style=for-the-badge&logo=tauri&logoColor=00FF9D"/>
 </div>
 
 ---
