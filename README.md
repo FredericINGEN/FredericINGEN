@@ -12,6 +12,7 @@ I’m a developer/engineer and open-source advocate dedicated to bringing true d
 
 ---
 ![animation](https://raw.githubusercontent.com/FredericINGEN/FredericINGEN/main/animationtwo.svg) 
+
 ---
 
 ### What I'm Currently Exploring
